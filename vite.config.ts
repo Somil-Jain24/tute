@@ -16,4 +16,9 @@ export default defineConfig({
     open: true,
     cors: true
   },
+  build: {
+    rollupOptions: {
+      external: ['recharts'], // 👈 this is the fix
+    },
+  },
 });
